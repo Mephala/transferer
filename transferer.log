@@ -1,0 +1,167 @@
+2016-04-15 13:49:21,464  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 13:49:21,466  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 13:50:34,074  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 13:50:34,077  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 13:51:09,877  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 13:51:09,879  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 13:52:36,842  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 13:52:36,844  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 13:52:38,609 ERROR (ListenObject.java:124) - Failed processing client connection
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+	at java.lang.StringBuilder.append(StringBuilder.java:132)
+	at com.mephalay.transferer.engine.ListenObject.processConnection(ListenObject.java:114)
+	at com.mephalay.transferer.engine.ListenObject.access$200(ListenObject.java:18)
+	at com.mephalay.transferer.engine.ListenObject$1$1.run(ListenObject.java:87)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-15 13:53:00,438  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 13:53:00,442  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 13:53:02,002 ERROR (ListenObject.java:124) - Failed processing client connection
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+	at java.lang.StringBuilder.append(StringBuilder.java:132)
+	at com.mephalay.transferer.engine.ListenObject.processConnection(ListenObject.java:114)
+	at com.mephalay.transferer.engine.ListenObject.access$200(ListenObject.java:18)
+	at com.mephalay.transferer.engine.ListenObject$1$1.run(ListenObject.java:87)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-15 13:53:24,310  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 13:53:24,312  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 13:54:20,030  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 13:54:20,033  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 13:54:28,475  INFO (ListenObject.java:124) - Processed client connection on port:4567 in 8442 ms.
+2016-04-15 13:55:27,853  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 13:55:27,855  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 13:55:27,856  INFO (ListenObject.java:124) - Processed client connection on port:4567 in 1 ms.
+2016-04-15 13:58:45,119  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 13:58:45,123  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 13:58:45,300  INFO (ListenObject.java:124) - Processed client connection on port:4567 in 177 ms.
+2016-04-15 14:00:47,513  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 14:00:47,515  INFO (ListenObject.java:107) - Processing client connection on port:4567
+2016-04-15 14:00:47,516  INFO (ListenObject.java:124) - Processed client connection on port:4567 in 1 ms.
+2016-04-15 14:02:44,607  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 14:02:44,611  INFO (ListenObject.java:112) - Processing client connection on port:4567
+2016-04-15 14:02:44,611  INFO (ListenObject.java:129) - Processed client connection on port:4567 in 0 ms.
+2016-04-15 14:04:46,186  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 14:04:46,189  INFO (ListenObject.java:112) - Processing client connection on port:4567
+2016-04-15 14:04:46,189  INFO (ListenObject.java:129) - Processed client connection on port:4567 in 0 ms.
+2016-04-15 14:04:47,575  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 14:04:47,576  INFO (ListenObject.java:112) - Processing client connection on port:4567
+2016-04-15 14:04:47,692  INFO (ListenObject.java:129) - Processed client connection on port:4567 in 116 ms.
+2016-04-15 14:05:16,816  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 14:05:16,818  INFO (ListenObject.java:112) - Processing client connection on port:4567
+2016-04-15 14:05:16,818  INFO (ListenObject.java:129) - Processed client connection on port:4567 in 0 ms.
+2016-04-15 14:05:18,196  INFO (ListenObject.java:83) - Received a client connection over port:4568, ip:127.0.0.1
+2016-04-15 14:05:18,197  INFO (ListenObject.java:112) - Processing client connection on port:4568
+2016-04-15 14:05:18,318  INFO (ListenObject.java:129) - Processed client connection on port:4568 in 121 ms.
+2016-04-15 14:05:57,128  INFO (ListenObject.java:83) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 14:05:57,130  INFO (ListenObject.java:112) - Processing client connection on port:4567
+2016-04-15 14:05:57,131  INFO (ListenObject.java:129) - Processed client connection on port:4567 in 1 ms.
+2016-04-15 14:05:58,492  INFO (ListenObject.java:83) - Received a client connection over port:4568, ip:127.0.0.1
+2016-04-15 14:05:58,493  INFO (ListenObject.java:112) - Processing client connection on port:4568
+2016-04-15 14:05:58,612  INFO (ListenObject.java:129) - Processed client connection on port:4568 in 119 ms.
+2016-04-15 14:30:04,250  INFO (ListenObject.java:42) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:30:04,253  INFO (ListenObject.java:120) - Processing client connection on port:4570
+2016-04-15 14:30:04,309 ERROR (ListenObject.java:151) - Failed processing client connection
+java.io.FileNotFoundException: null\e001abbe-3006-45bd-bbee-121979a52884 (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at com.mephalay.transferer.engine.ListenObject.processConnection(ListenObject.java:139)
+	at com.mephalay.transferer.engine.ListenObject.access$200(ListenObject.java:16)
+	at com.mephalay.transferer.engine.ListenObject$1$1.run(ListenObject.java:46)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-15 14:30:54,056  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:30:54,058  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 14:31:07,296 ERROR (ListenObject.java:152) - Failed processing client connection
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:535)
+	at java.lang.StringBuffer.append(StringBuffer.java:322)
+	at java.io.BufferedReader.readLine(BufferedReader.java:363)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at com.mephalay.transferer.engine.ListenObject.processConnection(ListenObject.java:141)
+	at com.mephalay.transferer.engine.ListenObject.access$200(ListenObject.java:16)
+	at com.mephalay.transferer.engine.ListenObject$1$1.run(ListenObject.java:47)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-15 14:31:41,305  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:31:41,307  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 14:31:49,819 ERROR (ListenObject.java:153) - Failed processing client connection
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:535)
+	at java.lang.StringBuffer.append(StringBuffer.java:322)
+	at java.io.BufferedReader.readLine(BufferedReader.java:363)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at com.mephalay.transferer.engine.ListenObject.processConnection(ListenObject.java:141)
+	at com.mephalay.transferer.engine.ListenObject.access$200(ListenObject.java:16)
+	at com.mephalay.transferer.engine.ListenObject$1$1.run(ListenObject.java:47)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-15 14:33:35,007  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:33:35,010  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 14:33:44,283 ERROR (ListenObject.java:153) - Failed processing client connection
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2367)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:535)
+	at java.lang.StringBuffer.append(StringBuffer.java:322)
+	at java.io.BufferedReader.readLine(BufferedReader.java:363)
+	at java.io.BufferedReader.readLine(BufferedReader.java:382)
+	at com.mephalay.transferer.engine.ListenObject.processConnection(ListenObject.java:141)
+	at com.mephalay.transferer.engine.ListenObject.access$200(ListenObject.java:16)
+	at com.mephalay.transferer.engine.ListenObject$1$1.run(ListenObject.java:47)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-15 14:33:53,458  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:33:53,460  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 14:37:40,033  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:37:40,035  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 14:41:41,423  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:41:41,426  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 14:52:04,796  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:52:04,799  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 14:57:51,254  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:57:51,257  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 14:59:35,580  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 14:59:36,690  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:00:14,175  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:00:14,177  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:04:46,508  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:04:46,515  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:05:41,144  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:05:41,146  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:05:41,204  INFO (ListenObject.java:152) - Processed client connection on port:4570 in 58 ms.
+2016-04-15 15:06:12,720  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:06:12,724  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:06:14,575  INFO (ListenObject.java:152) - Processed client connection on port:4570 in 1851 ms.
+2016-04-15 15:12:44,105  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:12:44,107  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:14:15,085  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:14:15,088  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:14:16,945  INFO (ListenObject.java:153) - Processed client connection on port:4570 in 1857 ms.
+2016-04-15 15:15:19,528  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:15:28,377  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:20:00,853  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:20:00,856  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:21:18,767  INFO (ListenObject.java:153) - Processed client connection on port:4570 in 77911 ms.
+2016-04-15 15:21:36,450  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:21:36,452  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:21:38,138  INFO (ListenObject.java:153) - Processed client connection on port:4570 in 1686 ms.
+2016-04-15 15:22:42,497  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:22:42,501  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:22:44,108  INFO (ListenObject.java:153) - Processed client connection on port:4570 in 1607 ms.
+2016-04-15 15:23:28,530  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:23:28,532  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:23:29,530  INFO (ListenObject.java:153) - Processed client connection on port:4570 in 998 ms.
+2016-04-15 15:26:19,947  INFO (ListenObject.java:43) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 15:26:19,950  INFO (ListenObject.java:121) - Processing client connection on port:4570
+2016-04-15 15:26:20,857  INFO (ListenObject.java:148) - Processed client connection on port:4570 in 907 ms.
