@@ -1,4 +1,3 @@
-import com.mephalay.transferer.ReceiveNotifier;
 import com.mephalay.transferer.engine.PortInUseException;
 import com.mephalay.transferer.engine.Transferer;
 import mockit.integration.junit4.JMockit;
@@ -23,10 +22,10 @@ import static org.junit.Assert.fail;
 
 @RunWith(JMockit.class)
 public class TestSerializableSend {
-    Logger logger = Logger.getLogger(this.getClass());
     private static final String LARGE_FILE_PATH = "C:\\Users\\masraf\\Downloads\\calibre-64bit-2.54.0.msi";
     private static final String RECEIVE_FILE_FOLDER_PATH = "C:\\Users\\masraf\\Desktop\\Ezgim";
-
+    private static final String VERY_LARGE_FILE_PATH = "J:\\Root\\13_Torrents\\win8.1\\Windows_8.1_Pro_X64_Activated.iso";
+    Logger logger = Logger.getLogger(this.getClass());
 
     @Test
     public void testSendingSerializable(){
@@ -102,22 +101,26 @@ public class TestSerializableSend {
             Transferer transferer = new Transferer(logger);
             int port = 4570;
             long timeout = 3000L;
-            TestReceiveNotifier rn = new TestReceiveNotifier();
-            transferer.receiveHDD(RECEIVE_FILE_FOLDER_PATH,port,rn);
-            Transferer sender = new Transferer(logger);
             File sentFile = new File(LARGE_FILE_PATH);
-            sender.transferHDD(sentFile,"localhost",port);
-            Thread.sleep(timeout);
-            File receivedFile = rn.getF();
-            assertTrue(receivedFile!=null);
-            assertTrue(receivedFile.length()>0);
-            System.out.println();
-            System.out.println("Received File:" +receivedFile.getAbsolutePath());
-            assertTrue(receivedFile.length()==sentFile.length());
+            sendAndReceiveFile(transferer, port, timeout, sentFile);
         } catch (Throwable t) {
             t.printStackTrace();
             fail();
         }
+    }
+
+    private void sendAndReceiveFile(Transferer transferer, int port, long timeout, File sentFile) throws PortInUseException, IOException, InterruptedException {
+        TestReceiveNotifier rn = new TestReceiveNotifier();
+        transferer.receiveHDD(RECEIVE_FILE_FOLDER_PATH, port, rn);
+        Transferer sender = new Transferer(logger);
+        sender.transferHDD(sentFile, "localhost", port);
+        Thread.sleep(timeout);
+        File receivedFile = rn.getF();
+        assertTrue(receivedFile != null);
+        assertTrue(receivedFile.length() > 0);
+        System.out.println();
+        System.out.println("Received File:" + receivedFile.getAbsolutePath());
+        assertTrue(receivedFile.length() == sentFile.length());
     }
 
     @Test
@@ -136,6 +139,20 @@ public class TestSerializableSend {
             if(count>maxCount)
                 fail();
             assertTrue(count<=maxCount);
+        } catch (Throwable t) {
+            t.printStackTrace();
+            fail();
+        }
+    }
+
+    @Test
+    public void testSendingVeryLargeFile() {
+        try {
+            Transferer transferer = new Transferer(logger);
+            int port = 4571;
+            long timeout = 10000L;
+            File sentFile = new File(VERY_LARGE_FILE_PATH);
+            sendAndReceiveFile(transferer, port, timeout, sentFile);
         } catch (Throwable t) {
             t.printStackTrace();
             fail();
