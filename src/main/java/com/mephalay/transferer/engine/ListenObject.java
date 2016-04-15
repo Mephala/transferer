@@ -143,6 +143,14 @@ class ListenObject {
         }
     }
 
+    /**
+     * Handle with care.
+     *
+     * @param processSocket
+     * @param rn
+     * @throws IOException
+     */
+
     private void handleComposite(Socket processSocket, ReceiveNotifier rn) throws IOException {
         InputStream is = processSocket.getInputStream();
         byte[] buffer = new byte[4096];
