@@ -159,5 +159,27 @@ public class TestSerializableSend {
         }
     }
 
+    @Test
+    public void testSendingFileAndSerializableAtTheSameTime() {
+        try {
+            Serializable s = new SeriazableObject();
+            File f = new File(LARGE_FILE_PATH);
+            Transferer receiver = new Transferer(logger);
+            int port = 4572;
+            long timeout = 3000L;
+            Transferer sender = new Transferer(logger);
+            TestReceiveNotifier rn = new TestReceiveNotifier();
+            receiver.receiveComposite(port, RECEIVE_FILE_FOLDER_PATH, rn);
+            sender.transferComposite(s, f, "localhost", port);
+            Thread.sleep(3000L);
+            File receivedFile = rn.getF();
+            assertTrue(receivedFile.length() == f.length());
+            assertTrue(rn.getS().length() > 0);
+        } catch (Throwable t) {
+            t.printStackTrace();
+            fail();
+        }
+    }
+
 
 }

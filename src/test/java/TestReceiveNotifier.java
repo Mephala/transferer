@@ -37,4 +37,10 @@ public class TestReceiveNotifier implements ReceiveNotifier {
 
 
     }
+
+    @Override
+    public void notifyComposite(String s, File f) {
+        this.s = s;
+        this.f = f;
+    }
 }
