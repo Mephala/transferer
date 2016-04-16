@@ -1,7 +1,7 @@
 import com.mephalay.transferer.engine.Transferer;
 import mockit.integration.junit4.JMockit;
 import org.apache.log4j.Logger;
-import org.junit.Ignore;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import java.io.File;
@@ -14,13 +14,12 @@ import static org.junit.Assert.fail;
 @RunWith(JMockit.class)
 public class CustomTests {
 
-    @Ignore
+    @Test
     public void testSendingToAcerSrv() {
         try {
             Logger logger = Logger.getLogger(this.getClass());
             Transferer t = new Transferer(logger);
-            t.transferHDD(new File("J:\\Root\\4_Entertainment"), "192.168.0.10", 1888);
-            t.terminateAll();
+            t.transferHDD(new File("J:\\Root\\4_Entertainment\\+18\\The.Fappening.zip"), "192.168.0.10", 1888);
         } catch (Throwable t) {
             t.printStackTrace();
             fail();
