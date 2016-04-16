@@ -14,12 +14,14 @@ import java.util.List;
  * Created by Mephalay on 4/15/2016.
  */
 public class Transferer {
-    private final Logger logger;
+    private Logger logger;
     private List<ListenObject> listenObjects = new ArrayList<>();
     private ObjectMapper om = new ObjectMapper();
 
     public Transferer(Logger logger){
         this.logger = logger;
+        if (logger == null)
+            this.logger = Logger.getLogger(this.getClass());
     }
 
     public void receiveRAM(int port, ReceiveNotifier rn) throws PortInUseException, IOException {
@@ -109,5 +111,11 @@ public class Transferer {
         logger.info("Sent composite file...");
         os.close();
         socket.close();
+    }
+
+    public void terminateAll() {
+        for (ListenObject listenObject : listenObjects) {
+            listenObject.terminate();
+        }
     }
 }

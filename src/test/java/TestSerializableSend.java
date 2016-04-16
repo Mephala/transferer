@@ -28,7 +28,7 @@ public class TestSerializableSend {
     Logger logger = Logger.getLogger(this.getClass());
 
     @Test
-    public void testSendingSerializable(){
+    public void testSendingSerializable() {
         try {
             ObjectMapper om = new ObjectMapper();
             Serializable s = new SeriazableObject();
@@ -42,11 +42,11 @@ public class TestSerializableSend {
     }
 
     @Test
-    public void testTransfererSendString(){
+    public void testTransfererSendString() {
         try {
             Serializable s = new SeriazableObject();
             long timeout = 1000L;
-            String receivedString = testTransferringSerializable(s, timeout,4567);
+            String receivedString = testTransferringSerializable(s, timeout, 4567);
             System.out.println(receivedString);
         } catch (Throwable t) {
             t.printStackTrace();
@@ -57,27 +57,27 @@ public class TestSerializableSend {
     private String testTransferringSerializable(Serializable s, long timeout, int port) throws PortInUseException, IOException, InterruptedException {
         Transferer receiver = new Transferer(logger);
         TestReceiveNotifier rn = new TestReceiveNotifier();
-        receiver.receiveRAM(port,rn);
+        receiver.receiveRAM(port, rn);
         Transferer transferer = new Transferer(logger);
-        transferer.transfer(s,"localhost",port);
+        transferer.transfer(s, "localhost", port);
         Thread.sleep(timeout);
         String receivedString = rn.getS();
-        assertTrue(receivedString!=null);
-        assertTrue(receivedString.length()>0);
+        assertTrue(receivedString != null);
+        assertTrue(receivedString.length() > 0);
         System.out.println();
         return receivedString;
     }
 
     @Test
-    public void testSendingVeryLargeRAMObject(){
+    public void testSendingVeryLargeRAMObject() {
         try {
             Vector<String> largeVector = new Vector<>();
-            for (int i = 0; i <100000 ; i++) {
+            for (int i = 0; i < 100000; i++) {
                 largeVector.add(UUID.randomUUID().toString());
             }
             Serializable s = largeVector;
             long timeout = 5000L;
-            String receivedString = testTransferringSerializable(s, timeout,4568);
+            String receivedString = testTransferringSerializable(s, timeout, 4568);
             System.out.println(receivedString);
 
         } catch (Throwable t) {
@@ -91,12 +91,12 @@ public class TestSerializableSend {
         Transferer transferer = new Transferer(logger);
         int port = 4569;
         TestReceiveNotifier rn = new TestReceiveNotifier();
-        transferer.receiveRAM(port,rn);
-        transferer.receiveRAM(port,rn);
+        transferer.receiveRAM(port, rn);
+        transferer.receiveRAM(port, rn);
     }
 
     @Test
-    public void testSendingLargeHddFile(){
+    public void testSendingLargeHddFile() {
         try {
             Transferer transferer = new Transferer(logger);
             int port = 4570;
@@ -124,21 +124,21 @@ public class TestSerializableSend {
     }
 
     @Test
-    public void testReadingWithFis(){
+    public void testReadingWithFis() {
         try {
             File file = new File(LARGE_FILE_PATH);
             FileInputStream fis = new FileInputStream(file);
             byte[] buffer = new byte[4096];
-            int maxCount = (int) (file.length()/4096);
+            int maxCount = (int) (file.length() / 4096);
             int count = 0;
-            while(fis.read(buffer)!=-1){
+            while (fis.read(buffer) != -1) {
                 count++;
-                if(count>maxCount)
+                if (count > maxCount)
                     fail();
             }
-            if(count>maxCount)
+            if (count > maxCount)
                 fail();
-            assertTrue(count<=maxCount);
+            assertTrue(count <= maxCount);
         } catch (Throwable t) {
             t.printStackTrace();
             fail();
@@ -175,6 +175,23 @@ public class TestSerializableSend {
             File receivedFile = rn.getF();
             assertTrue(receivedFile.length() == f.length());
             assertTrue(rn.getS().length() > 0);
+        } catch (Throwable t) {
+            t.printStackTrace();
+            fail();
+        }
+    }
+
+    @Test
+    public void testTermination() {
+        try {
+            Transferer t = new Transferer(logger);
+            TestReceiveNotifier rn = new TestReceiveNotifier();
+            for (int i = 4573; i < 4583; i++) {
+                t.receiveRAM(i, rn);
+            }
+            Thread.sleep(2000L);
+            t.terminateAll();
+            Thread.sleep(10000L);
         } catch (Throwable t) {
             t.printStackTrace();
             fail();

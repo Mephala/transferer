@@ -317,3 +317,202 @@ java.lang.OutOfMemoryError: Java heap space
 2016-04-15 16:55:38,839  INFO (Transferer.java:109) - Sent composite file...
 2016-04-15 16:55:38,840  INFO (ListenObject.java:175) - Completed composite network transfer, finishing up...
 2016-04-15 16:55:38,841  INFO (ListenObject.java:132) - Processed client connection on port:4572 in 980 ms.
+2016-04-15 17:00:21,839  INFO (ListenObject.java:45) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 17:00:21,841  INFO (ListenObject.java:126) - Processing client connection on port:4567
+2016-04-15 17:00:21,878  INFO (ListenObject.java:132) - Processed client connection on port:4567 in 37 ms.
+2016-04-15 17:00:23,167  INFO (ListenObject.java:45) - Received a client connection over port:4568, ip:127.0.0.1
+2016-04-15 17:00:23,168  INFO (ListenObject.java:126) - Processing client connection on port:4568
+2016-04-15 17:00:23,417  INFO (ListenObject.java:132) - Processed client connection on port:4568 in 249 ms.
+2016-04-15 17:00:28,544  INFO (ListenObject.java:45) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 17:00:28,544  INFO (ListenObject.java:126) - Processing client connection on port:4570
+2016-04-15 17:00:29,289  INFO (ListenObject.java:132) - Processed client connection on port:4570 in 745 ms.
+2016-04-15 17:00:32,290  INFO (Transferer.java:95) - Sending composite object...
+2016-04-15 17:00:32,292  INFO (ListenObject.java:45) - Received a client connection over port:4572, ip:127.0.0.1
+2016-04-15 17:00:32,293  INFO (ListenObject.java:126) - Processing client connection on port:4572
+2016-04-15 17:00:32,298  INFO (Transferer.java:99) - Sent composite serializable...
+2016-04-15 17:00:32,299  INFO (ListenObject.java:168) - Ack received, completed receiving composite serializable...
+2016-04-15 17:00:32,299  INFO (ListenObject.java:170) - Sending ack...
+2016-04-15 17:00:32,300  INFO (ListenObject.java:175) - ACK sent, awaiting composite file transfer...
+2016-04-15 17:00:32,300  INFO (Transferer.java:107) - Received ack from destination, proceeding on sending composite file...
+2016-04-15 17:00:33,018  INFO (Transferer.java:109) - Sent composite file...
+2016-04-15 17:00:33,019  INFO (ListenObject.java:183) - Completed composite network transfer, finishing up...
+2016-04-15 17:00:33,020  INFO (ListenObject.java:132) - Processed client connection on port:4572 in 727 ms.
+2016-04-15 17:00:36,026  INFO (ListenObject.java:45) - Received a client connection over port:4571, ip:127.0.0.1
+2016-04-15 17:00:36,027  INFO (ListenObject.java:126) - Processing client connection on port:4571
+2016-04-15 17:01:19,012  INFO (ListenObject.java:132) - Processed client connection on port:4571 in 42985 ms.
+2016-04-15 17:05:22,492  INFO (ListenObject.java:45) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 17:05:22,494  INFO (ListenObject.java:126) - Processing client connection on port:4567
+2016-04-15 17:05:22,531  INFO (ListenObject.java:132) - Processed client connection on port:4567 in 37 ms.
+2016-04-15 17:05:23,794  INFO (ListenObject.java:45) - Received a client connection over port:4568, ip:127.0.0.1
+2016-04-15 17:05:23,794  INFO (ListenObject.java:126) - Processing client connection on port:4568
+2016-04-15 17:05:24,041  INFO (ListenObject.java:132) - Processed client connection on port:4568 in 247 ms.
+2016-04-15 17:05:29,149  INFO (ListenObject.java:45) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 17:05:29,150  INFO (ListenObject.java:126) - Processing client connection on port:4570
+2016-04-15 17:05:29,871  INFO (ListenObject.java:132) - Processed client connection on port:4570 in 721 ms.
+2016-04-15 17:05:32,874  INFO (Transferer.java:95) - Sending composite object...
+2016-04-15 17:05:32,875  INFO (ListenObject.java:45) - Received a client connection over port:4572, ip:127.0.0.1
+2016-04-15 17:05:32,876  INFO (ListenObject.java:126) - Processing client connection on port:4572
+2016-04-15 17:05:32,881  INFO (Transferer.java:99) - Sent composite serializable...
+2016-04-15 17:05:32,882  INFO (ListenObject.java:168) - Ack received, completed receiving composite serializable...
+2016-04-15 17:05:32,883  INFO (ListenObject.java:170) - Sending ack...
+2016-04-15 17:05:32,883  INFO (ListenObject.java:175) - ACK sent, awaiting composite file transfer...
+2016-04-15 17:05:32,883  INFO (Transferer.java:107) - Received ack from destination, proceeding on sending composite file...
+2016-04-15 17:05:33,607  INFO (Transferer.java:109) - Sent composite file...
+2016-04-15 17:05:33,607  INFO (ListenObject.java:183) - Completed composite network transfer, finishing up...
+2016-04-15 17:05:33,609  INFO (ListenObject.java:132) - Processed client connection on port:4572 in 733 ms.
+2016-04-15 17:05:36,613  INFO (ListenObject.java:45) - Received a client connection over port:4571, ip:127.0.0.1
+2016-04-15 17:05:36,614  INFO (ListenObject.java:126) - Processing client connection on port:4571
+2016-04-15 17:06:09,518  INFO (ListenObject.java:132) - Processed client connection on port:4571 in 32904 ms.
+2016-04-15 17:08:37,197  INFO (ListenObject.java:45) - Received a client connection over port:4567, ip:127.0.0.1
+2016-04-15 17:08:37,199  INFO (ListenObject.java:126) - Processing client connection on port:4567
+2016-04-15 17:08:37,236  INFO (ListenObject.java:132) - Processed client connection on port:4567 in 37 ms.
+2016-04-15 17:08:38,493  INFO (ListenObject.java:45) - Received a client connection over port:4568, ip:127.0.0.1
+2016-04-15 17:08:38,493  INFO (ListenObject.java:126) - Processing client connection on port:4568
+2016-04-15 17:08:38,732  INFO (ListenObject.java:132) - Processed client connection on port:4568 in 239 ms.
+2016-04-15 17:08:43,843  INFO (ListenObject.java:45) - Received a client connection over port:4570, ip:127.0.0.1
+2016-04-15 17:08:43,843  INFO (ListenObject.java:126) - Processing client connection on port:4570
+2016-04-15 17:08:44,638  INFO (ListenObject.java:132) - Processed client connection on port:4570 in 795 ms.
+2016-04-15 17:08:47,638  INFO (Transferer.java:97) - Sending composite object...
+2016-04-15 17:08:47,639  INFO (ListenObject.java:45) - Received a client connection over port:4572, ip:127.0.0.1
+2016-04-15 17:08:47,639  INFO (ListenObject.java:126) - Processing client connection on port:4572
+2016-04-15 17:08:47,640  INFO (Transferer.java:101) - Sent composite serializable...
+2016-04-15 17:08:47,641  INFO (ListenObject.java:168) - Ack received, completed receiving composite serializable...
+2016-04-15 17:08:47,641  INFO (ListenObject.java:170) - Sending ack...
+2016-04-15 17:08:47,641  INFO (ListenObject.java:175) - ACK sent, awaiting composite file transfer...
+2016-04-15 17:08:47,641  INFO (Transferer.java:109) - Received ack from destination, proceeding on sending composite file...
+2016-04-15 17:08:48,330  INFO (Transferer.java:111) - Sent composite file...
+2016-04-15 17:08:48,330  INFO (ListenObject.java:183) - Completed composite network transfer, finishing up...
+2016-04-15 17:08:48,331  INFO (ListenObject.java:132) - Processed client connection on port:4572 in 692 ms.
+2016-04-15 17:08:51,333  INFO (ListenObject.java:45) - Received a client connection over port:4571, ip:127.0.0.1
+2016-04-15 17:08:51,334  INFO (ListenObject.java:126) - Processing client connection on port:4571
+2016-04-15 17:10:15,810  INFO (ListenObject.java:132) - Processed client connection on port:4571 in 84476 ms.
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:12:49,785 ERROR (ListenObject.java:56) - Failed processing listen
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.mephalay.transferer.engine.ListenObject$1.run(ListenObject.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-16 04:14:16,790  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:16,791  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:16,791  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:16,791  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:16,791  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:16,791  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:16,791  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:16,791  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:16,790  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:16,790  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,481  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,482  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,482  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,482  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,482  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,482  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,482  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,481  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,481  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:32,481  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,292  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,293  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,293  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,293  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,292  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,292  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,292  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,292  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,292  INFO (ListenObject.java:59) - Terminated server listening thread...
+2016-04-16 04:14:46,292  INFO (ListenObject.java:59) - Terminated server listening thread...

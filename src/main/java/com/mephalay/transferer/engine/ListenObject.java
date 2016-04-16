@@ -53,7 +53,10 @@ class ListenObject {
                         lpProcessThread.setDaemon(true);
                         lpProcessThread.start();
                     } catch (Throwable t) {
-                        logger.error("Failed processing listen", t);
+                        if (!stopSignal.get())
+                            logger.error("Failed processing listen", t);
+                        else
+                            logger.info("Terminated server listening thread...");
                     }
 
                 }
@@ -241,4 +244,13 @@ class ListenObject {
     }
 
 
+    public void terminate() {
+        stopSignal.set(true);
+        try {
+            if (!serverSocket.isClosed())
+                serverSocket.close();
+        } catch (IOException e) {
+            logger.error("Error closing socket", e);
+        }
+    }
 }
