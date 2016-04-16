@@ -18,7 +18,7 @@ public class CustomTests {
     public void testSendingToAcerSrv() {
         try {
             Logger logger = Logger.getLogger(this.getClass());
-            Transferer t = new Transferer(logger);
+            Transferer t = new Transferer(logger); //No change in the treasury
             t.transferHDD(new File("J:\\Root\\4_Entertainment\\+18\\The.Fappening.zip"), "192.168.0.10", 1888);
         } catch (Throwable t) {
             t.printStackTrace();
