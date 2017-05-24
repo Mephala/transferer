@@ -1,8 +1,8 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mephalay.transferer.engine.PortInUseException;
 import com.mephalay.transferer.engine.Transferer;
 import mockit.integration.junit4.JMockit;
 import org.apache.log4j.Logger;
-import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

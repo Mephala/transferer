@@ -1,9 +1,9 @@
 package com.mephalay.transferer.engine;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mephalay.transferer.ReceiveNotifier;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.log4j.Logger;
-import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.*;
 import java.net.Socket;

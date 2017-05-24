@@ -582,3 +582,9 @@ java.net.SocketException: socket closed
 2016-04-16 05:58:59,600  INFO (ListenObject.java:59) - Terminated server listening thread...
 2016-04-16 05:58:59,600  INFO (ListenObject.java:59) - Terminated server listening thread...
 2016-04-16 05:58:59,600  INFO (ListenObject.java:59) - Terminated server listening thread...
+2017-05-24 10:15:09,274  INFO (ListenObject.java:45) - Received a client connection over port:1553, ip:192.168.0.109
+2017-05-24 10:15:09,278  INFO (ListenObject.java:129) - Processing client connection on port:1553
+2017-05-24 10:15:09,364  INFO (ListenObject.java:135) - Processed client connection on port:1553 in 87 ms.
+2017-05-24 10:17:28,519  INFO (ListenObject.java:45) - Received a client connection over port:1553, ip:192.168.0.109
+2017-05-24 10:17:28,526  INFO (ListenObject.java:129) - Processing client connection on port:1553
+2017-05-24 10:17:28,667  INFO (ListenObject.java:135) - Processed client connection on port:1553 in 141 ms.
