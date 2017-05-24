@@ -54,6 +54,16 @@ public class Transferer {
         socket.close();
     }
 
+    public void transferString(String string, String ip, int port) throws IOException {
+        Socket socket = new Socket(ip, port);
+        OutputStream os = socket.getOutputStream();
+        os.flush();
+        String encoded = Base64.encodeBase64String(string.getBytes("UTF-8"));
+        os.write(encoded.getBytes("UTF-8"));
+        os.close();
+        socket.close();
+    }
+
     private void processSerializableTransferInner(Serializable s, OutputStream os) throws IOException {
         String serializedObj = om.writeValueAsString(s);
         String encoded = Base64.encodeBase64String(serializedObj.getBytes("UTF-8"));

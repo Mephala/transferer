@@ -31,7 +31,6 @@ public class TestListener {
                         System.out.println("Object received successfully :" + testObject);
                     } catch (Throwable t) {
                         t.printStackTrace();
-                        fail();
                     }
                 }
 

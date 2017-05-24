@@ -24,4 +24,16 @@ public class TestTransfer {
             fail();
         }
     }
+
+    @Test
+    public void testSendingString() {
+        try {
+            TestObject testObject = new TestObject();
+            Transferer t = new Transferer(logger);
+            t.transferString("This is a test string....ğüğşişişPĞPĞŞLÖÖMÖMİŞĞPPÖMĞÖĞPÇğpçĞ!!!!ŞlöLĞŞÜĞĞğöpömmööçç...ııııııı", "192.168.0.109", 1553);
+        } catch (Throwable t) {
+            t.printStackTrace();
+            fail();
+        }
+    }
 }
